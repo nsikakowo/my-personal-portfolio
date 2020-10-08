@@ -15,10 +15,30 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
+
+  #hero .container {
+    position: relative;
+  }
+
+  #hero .container .image {
+   overflow: hidden;
+    
+  }
+
+  #hero-pix {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    transform: scale(0.9);
+    z-index: -5;
+  }
+
+  
 
   .hero-title {
     font-size: 5.6rem;
